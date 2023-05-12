@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 void implimentWorstFit(int blockSize[], int blocks, int processSize[], int processes)
 {
     int allocation[processes];
@@ -44,8 +43,8 @@ void implimentWorstFit(int blockSize[], int blocks, int processSize[], int proce
 }
 int main()
 {
-    int blockSize[] = {100, 50, 30, 120, 35};
-    int processSize[] = {40, 10, 30, 60};
+    int blockSize[] = {110, 60, 40, 130, 45};
+    int processSize[] = {60, 20, 40, 70};
     int blocks = sizeof(blockSize)/sizeof(blockSize[0]);
     int processes = sizeof(processSize)/sizeof(processSize[0]);
     implimentWorstFit(blockSize, blocks, processSize, processes);
